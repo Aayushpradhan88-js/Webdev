@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  background: red;
+  display: flex;
+  background-color: lightgray;
+  padding: 200px;
+}
+
+.box1 {
+  background: red;
+  
+}
+
+.box2 {
+  background: rgb(0, 0, 0);
+  display: flex;
+}
+
+.box3 {
+  background: blue;
+}

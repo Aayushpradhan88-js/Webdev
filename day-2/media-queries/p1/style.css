@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:black;
+    color:white;
+    padding:20px;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+@media(max-width: 768px){
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-top: 10px
+    }
+}
+
+@media(max-width: 500px){
+    .navbar{
+        flex-direction: column;
+    }
+
+    .menu{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}

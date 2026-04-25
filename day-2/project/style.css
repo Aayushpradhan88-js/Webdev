@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-item: center;
+    background: green;
+    color: white;
+    padding: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* card section */
+#cards-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* earch card designing */
+.card {
+    min-width: 250px;
+    background: #f4f4f4
+}
+
+/* Mobile responsive */
+@media(max-width: 520px){
+    #navbar{
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+    }
+
+    #cards-section{
+        flex-direction: column
+    }
+}
