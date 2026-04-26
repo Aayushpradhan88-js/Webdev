@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* transition */
+/* #btn{
+    padding: 15px 30px;
+    background: blue;
+    color: white;
+    border: none;
+
+    /* transition */
+    /* transition : 0.5s */
+/* } */
+
+/* button:hover{ */
+    /* background: red; */
+/* }  */
+
+/* hover */
+
+#card{
+     width:200px;
+    padding:30px;
+    background:orange;
+    transition:0.5s;
+}
+
+#card:hover{
+    background: rgb(229, 9, 9);
+}

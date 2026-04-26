@@ -1,0 +1,24 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#parent {
+        width:300px;
+    height:300px;
+    background:lightblue;
+
+
+ position: absolute;
+}
+
+.child{
+    background: red;
+     color:white;
+    padding:10px;
+
+    position: absolute;
+    top:10px;
+    right:10px;
+}
