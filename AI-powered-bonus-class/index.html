@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EverestAcademy — Premier College in Nepal</title>
+    <!-- Phase 2: Link stylesheet here -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- ============================================================
+         HEADER / NAVIGATION
+         Reference: TU (tribhuvan.edu.np), KU (ku.edu.np) both use
+         logo-left, nav-right patterns with admission CTA buttons.
+    ============================================================ -->
+    <header>
+
+      <!-- Top utility bar — seen on IOE, Kathmandu University sites
+           Contains: contact info, social links, quick links -->
+      <div class="topbar">
+        <div class="topbar__contact">
+          <span>📞 +977-9811111111</span>
+          <span>✉ info@everestacademy.edu.np</span>
+        </div>
+        <div class="topbar__links">
+          <a href="#">Notice Board</a>
+          <a href="#">E-Library</a>
+          <a href="#">Alumni</a>
+          <a href="#">NEB Result</a>
+        </div>
+      </div>
+
+      <!-- Main navbar: Logo + Primary Navigation + CTA -->
+      <nav class="navbar">
+
+        <!-- College Logo & Name -->
+        <div class="navbar__brand">
+          <img src="assets/logo.png" alt="Everest Academy Logo" />
+          <div class="navbar__brand-text">
+            <span class="navbar__name">Everest Academy</span>
+            <span class="navbar__tagline">Affiliated to Tribhuvan University</span>
+          </div>
+        </div>
+
+        <!-- Primary Navigation Links
+             Inspired by: Budhanilkantha School, Xavier International College
+             Sections common to Nepali college sites: Home, Programs, Courses,
+             Gallery, Admissions, About, Contact -->
+        <ul class="navbar__menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- CTA Button — Apply Now (prominent on all Nepali college sites) -->
+        <a href="#admissions" class="navbar__cta">Apply Now</a>
+
+      </nav>
+    </header>
+    <!-- END HEADER -->
+
+
+    <!-- ============================================================
+         MAIN CONTENT
+    ============================================================ -->
+    <main>
+
+      <!-- ----------------------------------------------------------
+           HERO SECTION
+           Reference: KU, Ace Institute use full-width hero banners
+           with headline + subtitle + dual CTAs (Apply / Learn More)
+           Background: campus image or video poster
+      ---------------------------------------------------------- -->
+      <section id="home" class="hero">
+        <div class="hero__background">
+          <!-- Background image / video poster set via CSS in Phase 2 -->
+        </div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Est. 2001 · Kathmandu, Nepal</p>
+          <h1 class="hero__headline">
+            Shape Your Future <br />
+            at Everest Academy
+          </h1>
+          <p class="hero__subtext">
+            Nepal's leading institution offering +2 Science, Management,
+            Humanities, and undergraduate programs — building tomorrow's leaders.
+          </p>
+          <div class="hero__actions">
+            <a href="#admissions" class="btn btn--primary">Apply for 2081/82</a>
+            <a href="#programs" class="btn btn--outline">Explore Programs</a>
+          </div>
+        </div>
+
+        <!-- Hero Stats Bar — used by Islington, Softwarica, Herald College -->
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-number">12,000+</span>
+            <span class="hero__stat-label">Students Enrolled</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">95%</span>
+            <span class="hero__stat-label">Pass Rate</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">200+</span>
+            <span class="hero__stat-label">Faculty Members</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">25+</span>
+            <span class="hero__stat-label">Years of Excellence</span>
+          </div>
+        </div>
+      </section>
+      <!-- END HERO -->
+
+
+      <!-- ----------------------------------------------------------
+           NOTICE / ANNOUNCEMENT TICKER
+           Reference: TU, Purbanchal University — scrolling notice bar
+           for exam dates, results, admission deadlines
+      ---------------------------------------------------------- -->
+      <section class="notices">
+        <span class="notices__label">📢 Latest Notices:</span>
+        <div class="notices__ticker">
+          <ul class="notices__list">
+            <li><a href="#">Admission Open for 2081/82 — Class 11 (Science, Management, Humanities)</a></li>
+            <li><a href="#">Scholarship Exam Results Published — View Now</a></li>
+            <li><a href="#">Annual Sports Week: Chaitra 10–15, 2081</a></li>
+            <li><a href="#">NEB Exam Routine 2081 — Download PDF</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- END NOTICES -->
+
+
+      <!-- ----------------------------------------------------------
+           PROGRAMS / FACULTIES SECTION  (Top 1 — large card)
+           Reference: Kathmandu University, KIST College group programs
+           into Science, Management, Humanities, BBA, BCA, etc.
+      ---------------------------------------------------------- -->
+      <section id="programs" class="programs">
+        <div class="section__header">
+          <h2 class="section__title">Our Programs</h2>
+          <p class="section__subtitle">
+            From +2 to undergraduate — find the course that launches your career.
+          </p>
+        </div>
+
+        <!-- Featured / Top Program Card (Top1 in wireframe — larger) -->
+        <div class="programs__featured">
+          <article class="program-card program-card--featured">
+            <div class="program-card__image">
+               <img src="assets/logo.png" alt="Everest Academy Logo" />
+            </div>
+            <div class="program-card__body">
+              <span class="program-card__badge">Most Popular</span>
+              <h3 class="program-card__title">+2 Science (NEB)</h3>
+              <p class="program-card__desc">
+                Physics, Chemistry, Biology & Mathematics streams.
+                Affiliated to National Examinations Board. 2-year program.
+              </p>
+              <ul class="program-card__highlights">
+                <li>Dedicated labs & smart classrooms</li>
+                <li>Entrance preparation for IOE / IOM / MBBS</li>
+                <li>Merit-based scholarships available</li>
+              </ul>
+              <a href="#admissions" class="btn btn--primary">Apply Now</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Secondary Programs Grid (Top2, Top3 in wireframe) -->
+        <div class="programs__grid">
+
+          <!-- Program Card 2 -->
+          <article class="program-card">
+            <div class="program-card__image">
+             <img src="assets/logo.png" alt="Everest Academy Logo" />
+            </div>
+            <div class="program-card__body">
+              <h3 class="program-card__title">+2 Management (NEB)</h3>
+              <p class="program-card__desc">
+                Accountancy, Business Studies, Economics & Marketing.
+                Foundation for BBA, BBS, and commerce careers.
+              </p>
+              <a href="#admissions" class="btn btn--outline">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Program Card 3 -->
+          <article class="program-card">
+            <div class="program-card__image">
+            <img src="assets/logo.png" alt="Everest Academy Logo" />>
+            </div>
+            <div class="program-card__body">
+              <h3 class="program-card__title">+2 Humanities (NEB)</h3>
+              <p class="program-card__desc">
+                Sociology, Political Science, English & History.
+                Ideal pathway for law, civil service & social work.
+              </p>
+              <a href="#admissions" class="btn btn--outline">Learn More</a>
+            </div>
+          </article>
+
+          <!-- Program Card 4 — Undergraduate (BCA / BBA) -->
+          <article class="program-card">
+            <div class="program-card__image">
+              <!-- Image: Computer lab / coding -->
+            </div>
+            <div class="program-card__body">
+              <h3 class="program-card__title">BCA (TU Affiliated)</h3>
+              <p class="program-card__desc">
+                Bachelor of Computer Applications — 4-year program.
+                Software development, networking & IT management.
+              </p>
+              <a href="#admissions" class="btn btn--outline">Learn More</a>
+            </div>
+          </article>
+
+        </div>
+        <!-- View all programs link -->
+        <div class="programs__footer">
+          <a href="#courses" class="btn btn--ghost">View All Courses →</a>
+        </div>
+      </section>
+      <!-- END PROGRAMS -->
+
+
+      <!-- ----------------------------------------------------------
+           WHY CHOOSE US / KEY FEATURES
+           Reference: Islington College, Softwarica — USP section with
+           icon cards: Qualified Faculty, Modern Labs, Placements, etc.
+      ---------------------------------------------------------- -->
+      <section class="features">
+        <div class="section__header">
+          <h2 class="section__title">Why Everest Academy?</h2>
+          <p class="section__subtitle">Trusted by students across Bagmati, Koshi & Gandaki provinces.</p>
+        </div>
+        <div class="features__grid">
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🏛️</div>
+            <h3 class="feature-card__title">TU / NEB Affiliated</h3>
+            <p class="feature-card__desc">Fully recognized by Tribhuvan University and National Examinations Board.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🔬</div>
+            <h3 class="feature-card__title">Modern Labs</h3>
+            <p class="feature-card__desc">Physics, Chemistry, Biology & Computer labs equipped with latest instruments.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🎓</div>
+            <h3 class="feature-card__title">Expert Faculty</h3>
+            <p class="feature-card__desc">200+ experienced teachers, many holding PhDs from reputed universities.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">💰</div>
+            <h3 class="feature-card__title">Scholarships</h3>
+            <p class="feature-card__desc">Merit and need-based scholarships. Dalit, Janajati & disability quotas available.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🏆</div>
+            <h3 class="feature-card__title">Entrance Coaching</h3>
+            <p class="feature-card__desc">Dedicated IOE, IOM, CMAT & BCA entrance preparation batches.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card__icon">🚌</div>
+            <h3 class="feature-card__title">Transport & Hostel</h3>
+            <p class="feature-card__desc">College bus routes across Kathmandu valley. Separate boys & girls hostel.</p>
+          </div>
+
+        </div>
+      </section>
+      <!-- END FEATURES -->
+
+
+      <!-- ----------------------------------------------------------
+           ADMISSIONS SECTION
+           Reference: Xavier, Budhanilkantha — clear step-by-step
+           admission process + eligibility + fee structure
+      ---------------------------------------------------------- -->
+      <section id="admissions" class="admissions">
+        <div class="section__header">
+          <h2 class="section__title">Admissions 2081/82</h2>
+          <p class="section__subtitle">Applications are open. Limited seats — apply early.</p>
+        </div>
+
+        <div class="admissions__layout">
+
+          <!-- Admission Process Steps -->
+          <div class="admissions__steps">
+            <h3>How to Apply</h3>
+            <ol class="steps-list">
+              <li class="steps-list__item">
+                <span class="steps-list__number">01</span>
+                <div>
+                  <strong>Fill Online Form</strong>
+                  <p>Complete the application form on our website or visit the admission office.</p>
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__number">02</span>
+                <div>
+                  <strong>Submit Documents</strong>
+                  <p>SEE / SLC marksheet, character certificate, PP-size photos, citizenship copy.</p>
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__number">03</span>
+                <div>
+                  <strong>Entrance / Interview</strong>
+                  <p>Appear for the scholarship test (optional) or direct admission interview.</p>
+                </div>
+              </li>
+              <li class="steps-list__item">
+                <span class="steps-list__number">04</span>
+                <div>
+                  <strong>Pay Fees & Confirm</strong>
+                  <p>Pay admission fees via eSewa, bank, or cash. Collect your enrollment card.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Admission Enquiry / Quick Contact Form -->
+          <div class="admissions__enquiry">
+            <h3>Quick Enquiry</h3>
+            <form class="enquiry-form" action="#" method="POST">
+              <!-- Phase 2: Style this form -->
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Aarav Sharma" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="98XXXXXXXX" required />
+              </div>
+              <div class="form-group">
+                <label for="program">Interested Program</label>
+                <select id="program" name="program">
+                  <option value="">-- Select Program --</option>
+                  <option>+2 Science</option>
+                  <option>+2 Management</option>
+                  <option>+2 Humanities</option>
+                  <option>BCA</option>
+                  <option>BBA</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" rows="3" placeholder="Any questions?"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">Send Enquiry</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+      <!-- END ADMISSIONS -->
+
+
+      <!-- ----------------------------------------------------------
+           GALLERY SECTION
+           Reference: Most Nepali college sites feature campus photos,
+           events (Annual Day, Sports, Cultural), lab images
+      ---------------------------------------------------------- -->
+      <section id="gallery" class="gallery">
+        <div class="section__header">
+          <h2 class="section__title">Campus Life</h2>
+          <p class="section__subtitle">A glimpse into life at Everest Academy.</p>
+        </div>
+        <div class="gallery__grid">
+          <!-- 8 gallery images — src set in Phase 2 -->
+          <figure class="gallery__item gallery__item--large">
+            <img src="assets/gallery/campus-main.jpg" alt="Main campus building" />
+            <figcaption>Main Campus — Kathmandu</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/gallery/science-lab.jpg" alt="Science laboratory" />
+            <figcaption>Science Lab</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/gallery/library.jpg" alt="Library" />
+            <figcaption>Digital Library</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/gallery/sports.jpg" alt="Sports event" />
+            <figcaption>Annual Sports Day</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/gallery/cultural.jpg" alt="Cultural program" />
+            <figcaption>Cultural Program</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/gallery/computer-lab.jpg" alt="Computer lab" />
+            <figcaption>Computer Lab</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/gallery/classroom.jpg" alt="Smart classroom" />
+            <figcaption>Smart Classroom</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <img src="assets/gallery/hostel.jpg" alt="Student hostel" />
+            <figcaption>Student Hostel</figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- END GALLERY -->
+
+
+      <!-- ----------------------------------------------------------
+           TESTIMONIALS / STUDENT SUCCESS
+           Reference: Islington, Herald College feature alumni quotes
+           and notable placements / university acceptances
+      ---------------------------------------------------------- -->
+      <section class="testimonials">
+        <div class="section__header">
+          <h2 class="section__title">What Our Students Say</h2>
+        </div>
+        <div class="testimonials__grid">
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">
+              "The entrance coaching at Everest Academy helped me crack IOE with 
+              a top-50 rank. The teachers genuinely care about each student."
+            </p>
+            <footer class="testimonial-card__author">
+              <img src="assets/students/student1.jpg" alt="Priya Thapa" />
+              <div>
+                <strong>Priya Thapa</strong>
+                <span>IOE — Pulchowk Campus, 2080 Batch</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">
+              "From +2 Management here, I went on to complete BBA from KU. 
+              The business foundation I built here was invaluable."
+            </p>
+            <footer class="testimonial-card__author">
+              <img src="assets/students/student2.jpg" alt="Rohan Gurung" />
+              <div>
+                <strong>Rohan Gurung</strong>
+                <span>BBA Graduate — Kathmandu University</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__quote">
+              "Scholarship exam li scholarship paayeko, ani +2 Science padheko. 
+              Teaching quality is genuinely national level."
+            </p>
+            <footer class="testimonial-card__author">
+              <img src="assets/students/student3.jpg" alt="Sunita Rai" />
+              <div>
+                <strong>Sunita Rai</strong>
+                <span>+2 Science (Scholarship), 2079 Batch</span>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </section>
+      <!-- END TESTIMONIALS -->
+
+
+      <!-- ----------------------------------------------------------
+           ABOUT SECTION (Brief — full page via About link)
+           Reference: Most Nepali college sites include a brief about
+           with vision/mission + principal's message
+      ---------------------------------------------------------- -->
+      <section id="about" class="about">
+        <div class="about__content">
+          <div class="about__text">
+            <span class="section__eyebrow">About Us</span>
+            <h2 class="section__title">25 Years of Academic Excellence</h2>
+            <p>
+              Founded in 2056 BS (2001 AD), Everest Academy is one of Kathmandu's 
+              most trusted higher secondary and undergraduate institutions. 
+              Affiliated to Tribhuvan University and NEB, we have nurtured over 
+              12,000 graduates who serve in sectors from medicine to engineering, 
+              banking to civil service.
+            </p>
+            <p>
+              Our campus spans 5 ropani in the heart of Kathmandu, with state-of-the-art 
+              labs, a 50,000-volume library, and dedicated sports facilities.
+            </p>
+            <a href="#" class="btn btn--outline">Read Our Full Story →</a>
+          </div>
+
+          <!-- Principal's Message — common on Nepali college sites -->
+          <div class="about__principal">
+            <figure class="principal-card">
+              <img src="assets/principal.jpg" alt="Principal Dr. Mohan Prasad Adhikari" />
+              <figcaption>
+                <blockquote>
+                  "Education is not just about degrees — it's about building character, 
+                  curiosity, and the confidence to serve our nation."
+                </blockquote>
+                <strong>Dr. Mohan Prasad Adhikari</strong>
+                <span>Principal, Everest Academy</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- END ABOUT -->
+
+
+      <!-- ----------------------------------------------------------
+           AFFILIATION & RECOGNITION LOGOS
+           Reference: All Nepali colleges display: TU, NEB, UGC Nepal,
+           Quality Assurance & Accreditation Council (QAAC) logos
+      ---------------------------------------------------------- -->
+      <section class="affiliations">
+        <p class="affiliations__label">Recognized & Affiliated By</p>
+        <div class="affiliations__logos">
+          <img src="assets/logos/tu-logo.png" alt="Tribhuvan University" />
+          <img src="assets/logos/neb-logo.png" alt="National Examinations Board" />
+          <img src="assets/logos/ugc-logo.png" alt="University Grants Commission Nepal" />
+          <img src="assets/logos/qaac-logo.png" alt="Quality Assurance & Accreditation Council" />
+          <img src="assets/logos/moest-logo.png" alt="Ministry of Education, Science & Technology" />
+        </div>
+      </section>
+      <!-- END AFFILIATIONS -->
+
+    </main>
+    <!-- END MAIN -->
+
+
+    <!-- ============================================================
+         FOOTER
+         Reference: KU, TU affiliated colleges — 4-column footer:
+         About | Quick Links | Programs | Contact + social + copyright
+    ============================================================ -->
+    <footer id="contact" class="footer">
+
+      <!-- Footer Top: 4 columns -->
+      <div class="footer__top">
+
+        <!-- Column 1: Brand & About -->
+        <div class="footer__col footer__col--brand">
+          <img src="assets/logo-white.png" alt="Everest Academy" class="footer__logo" />
+          <p class="footer__about">
+            Everest Academy — shaping Nepal's future leaders since 2056 BS. 
+            TU affiliated. NEB recognized.
+          </p>
+          <!-- Social Media Links -->
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><!-- FB Icon --></a>
+            <a href="#" aria-label="YouTube"><!-- YT Icon --></a>
+            <a href="#" aria-label="Instagram"><!-- IG Icon --></a>
+            <a href="#" aria-label="Twitter/X"><!-- X Icon --></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#">Notice Board</a></li>
+            <li><a href="#">Exam Routine</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Downloads</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Programs -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Programs</h4>
+          <ul class="footer__list">
+            <li><a href="#">+2 Science</a></li>
+            <li><a href="#">+2 Management</a></li>
+            <li><a href="#">+2 Humanities</a></li>
+            <li><a href="#">BCA (TU)</a></li>
+            <li><a href="#">BBA (TU)</a></li>
+            <li><a href="#">Entrance Coaching</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Info -->
+        <div class="footer__col">
+          <h4 class="footer__heading">Contact Us</h4>
+          <address class="footer__address">
+            <p>📍 Putalisadak, Kathmandu-31<br />Bagmati Province, Nepal</p>
+            <p>📞 <a href="tel:+97714XXXXXX">+977-1-4XXXXXX</a></p>
+            <p>📱 <a href="tel:+9779XXXXXXXX">+977-9XXXXXXXX</a></p>
+            <p>✉ <a href="mailto:info@everestacademy.edu.np">info@everestacademy.edu.np</a></p>
+          </address>
+          <!-- Office Hours -->
+          <div class="footer__hours">
+            <strong>Office Hours</strong>
+            <p>Sun–Fri: 7:00 AM – 5:00 PM</p>
+            <p>Saturday: 9:00 AM – 1:00 PM</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- END Footer Top -->
+
+      <!-- Footer Bottom: Copyright + legal links -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2081 BS / 2024 AD Everest Academy. All Rights Reserved.
+        </p>
+        <ul class="footer__legal">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      <!-- END Footer Bottom -->
+
+    </footer>
+    <!-- END FOOTER -->
+
+  </body>
+</html>
