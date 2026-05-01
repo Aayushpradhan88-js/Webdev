@@ -1,4 +1,5 @@
 Day1: Layout Thinking & CSS Foundations 
+
 - Understanding how layouts work in browsers ✅
 - Box model (practical debugging approach) ✅
 - Display properties (block, inline, flex intro) ✅
