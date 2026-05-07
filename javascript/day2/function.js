@@ -43,3 +43,4 @@ function calculatorFunction(num1, num2, operator) {
     }
 }
 console.log(calculatorFunction(10, 5, '*'))
+console.log(calculatorFunction(10, 5, '+'))
