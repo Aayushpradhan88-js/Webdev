@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Event</title>
+
+    <style>
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Click event -->
+    <!-- <h1>JS EVENT + Event Object</h1>
+
+    <button id="btn">Click Me!</button> -->
+
+    <input type="text" id="nameInput" placeholder="type something">
+
+    <p id="text"></p>
+
+    <!-- KEYDOWN EVENT -->
+    <input type="text" id="keyboard" placeholder="Press keyboard key">
+
+    <p id="keyResult"></p>
+
+    <!-- MOUSEOVER EVENT -->
+    <div id="box">
+        Hover mouse here
+    </div>
+
+    <!-- SUBMIT EVENT -->
+    <form id="myForm">
+        <input type="email" placeholder="Enter email">
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+    <script>
+        //CLICK EVENT CODE
+        // const btn = document.getElementById("btn");
+
+        // btn.addEventListener("click", function () {
+        //     alert("Button Clicked!");
+        // })
+
+        //INPUT
+        const input = document.getElementById("nameInput");
+        const text = document.getElementById("text");
+
+        input.addEventListener("input", function() {
+            text.textContent = input.value
+        })
+
+        //KEYDOWN EVENT
+        const keyboard = document.getElementById("keyboard")
+        const KeyResult = document.getElementById("keyResult")
+        
+        keyboard.addEventListener("keydown", function(e){
+            keyResult.textContent = "You Pressed" + e.key
+        })
+
+        //MOUSEOVER EVENT
+        const box = document.getElementById("box");
+        box.addEventListener("mouseover", function(){
+            box.style.backgroundColor = "orange"
+        })
+
+        //SUBMIT EVENT
+        const form = document.getElementById("myForm");
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+            alert("Form Submitted!")
+        })
+    </script>
+</body>
+
+
+</html>

@@ -1,7 +1,7 @@
 Day 3: Arrays & Objects 
 
-1. What is an array?  
-   a. Creating arrays — [ ]
+1. What is an array?  ✅
+   a. Creating arrays — [ ] 
    b. Accessing & modifying elements - index-based
     (zero-indexed!)  
    c. Array Methods (must-know)
@@ -19,7 +19,7 @@ Day 3: Arrays & Objects
    Resource: (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 2. Objects
-   a. What is an object? - Key, value pairs
+   a. What is an object? - Key, value pairs✅
    b. Creating Objects
         - Object literals { }
     c. Accessing Properties
@@ -27,7 +27,7 @@ Day 3: Arrays & Objects
     e. Nested Objects
     f. Object methods - This keyword
 
-3. Array of Objects  
+3. Array of Objects  ✅
    a. Combining arrays + objects
    b. Looping through array of objects
    c. Filtering mapping complex data
