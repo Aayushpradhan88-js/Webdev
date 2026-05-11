@@ -1,4 +1,4 @@
-Day 6: Async JavaScript & API Calls 
+Day 5: Async JavaScript & API Calls 
  
 1. Why Async JavaScript?  
     - JavaScript is single-threaded  
