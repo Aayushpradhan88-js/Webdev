@@ -16,6 +16,7 @@ Day 5: Async JavaScript & API Calls
     - Pending, fulfilled, rejected 
     - .then( ), .catch( ) & .finally( ) 
 
+#Practical
 4. async / await (Modern Approach)  
     - async function  
     - Await - try / catch  
